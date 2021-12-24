@@ -1,6 +1,8 @@
 #include<iostream>
-
+#include <string>
 using namespace std;
+template <typename type>
+type mySwap(type &x,type &y);
 
 int main(){
 	int x, y;
@@ -29,4 +31,10 @@ int main(){
 
 	return 0;
 }
-
+template <typename ctype>
+ctype mySwap(ctype &x,ctype &y){
+    ctype a =x, b =y;
+    x = b;
+    y = a;
+   return x;
+}
